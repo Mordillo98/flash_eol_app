@@ -31,7 +31,7 @@ void activate(GtkApplication* app, gpointer user_data){ // Activates the GTK app
    GtkWidget* button = gtk_button_new_with_label("OK"); // Create an "OK" button
    g_signal_connect(button, "clicked", G_CALLBACK(close_window), NULL); // Connect the button click to close_window function
 
-   GtkWidget* image = gtk_image_new_from_file("FLASH-PLAYER-DEAD.png"); // Load the image
+   GtkWidget* image = gtk_image_new_from_file("/opt/archbangretro/flash_eol_app/FLASH-PLAYER-DEAD.png"); // Load the image
 
    GtkWidget* box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 10); // Create a vertical box container
    gtk_box_pack_start(GTK_BOX(box), image, TRUE, TRUE, 0); // Add the image to the box
